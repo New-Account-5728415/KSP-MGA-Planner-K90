@@ -494,6 +494,7 @@
   color:              0x937575
 
 - !!map
+  id:                 25
   name:               Klip
   radius:             241000
   mass:               2.104045e+22
@@ -511,6 +512,7 @@
   color:              0xa28966
   
 - !!map
+  id:                 26
   name:               Bop
   radius:             65000
   mass:               3.7261090e+19
@@ -528,9 +530,12 @@
   color:              0x7f6d51
   
 - !!map
+  id:                 27
   name:               Pol
+  radius:             44000
   mass:               1.0813507e+19
   stdGravParam:       7.2170208e+8
+  soi:                4285000
   orbit:
     semiMajorAxis:    739613000
     eccentricity:     0.2522
@@ -543,6 +548,7 @@
   color:              0x9ba078
 
 - !!map
+  id:                 28
   name:               Euribanne
   radius:             18000
   mass:               714087155207287700
@@ -560,6 +566,7 @@
   color:              0x7b6269
 
 - !!map
+  id:                 29
   name:               Eurbon
   radius:             5000
   mass:               11019863506285304
@@ -573,9 +580,11 @@
     ascNodeLongitude: 248
   meanAnomaly0:       0
   epoch:              0
+  orbiting:           28
   color:              0x59564c
 
 - !!map
+  id:                 30
   name:               Palloocus
   radius:             30000
   mass:               3967150862262709000
@@ -593,6 +602,7 @@
   color:              0x7f7a7f
 
 - !!map
+  id:                 31
   name:               Palloomus
   radius:             27000
   mass:               2999166051870608400
@@ -606,13 +616,16 @@
     ascNodeLongitude: 230
   meanAnomaly0:       0
   epoch:              0
+  orbiting:           30
   color:              0x7f7a7f
   
 - !!map
+  id:                 32
   name:               Dres
   radius:             138000
   mass:               3.2190937e+20
   stdGravParam:       2.1484489e+10
+  soi:                33375000
   orbit:
     semiMajorAxis:    41514047500
     eccentricity:     0.2
@@ -625,6 +638,7 @@
   color:              0x5a4432
   
 - !!map
+  id:                 33
   name:               Eeloo
   radius:             210000
   mass:               1.1149224e+21
@@ -642,6 +656,7 @@
   color:              0x686a6a
 
 - !!map
+  id:                 34
   name:               Sar
   radius:             71647
   mass:               40050274193414240000
@@ -659,6 +674,7 @@
   color:              0x7C8488
 
 - !!map
+  id:                 35
   name:               Telsa
   radius:             8430
   mass:               138769838261160700
@@ -672,9 +688,11 @@
     ascNodeLongitude: 44
   meanAnomaly0:       0.9599310885968813
   epoch:              0
+  orbiting:           34
   color:              0xCDCCCC
 
 - !!map
+  id:                 36
   name:               Silan
   radius:             3807300
   atmosphereAlt:      452000
@@ -693,6 +711,7 @@
   color:              0x152436
 
 - !!map
+  id:                 37
   name:               Gene
   radius:             38300
   mass:               8470422051257060000
@@ -706,9 +725,11 @@
     ascNodeLongitude: 15
   meanAnomaly0:       1.902408884673819
   epoch:              0
+  orbiting:           36
   color:              0x796F6F
 
 - !!map
+  id:                 38
   name:               Talin
   radius:             296400
   atmosphereAlt:      38000
@@ -723,9 +744,11 @@
     ascNodeLongitude: 222
   meanAnomaly0:       3.455751918948773
   epoch:              0
+  orbiting:           36
   color:              0xbba99e
 
 - !!map
+  id:                 39
   name:               Gus
   radius:             266000
   atmosphereAlt:      8000
@@ -740,9 +763,11 @@
     ascNodeLongitude: 248
   meanAnomaly0:       5.969026041820607
   epoch:              0
+  orbiting:           36
   color:              0x818080
 
 - !!map
+  id:                 40
   name:               Walt
   radius:             268300
   mass:               1.6288347199533886e+21
@@ -756,9 +781,11 @@
     ascNodeLongitude: 115
   meanAnomaly0:       5.061454830783555
   epoch:              0
+  orbiting:           36
   color:              0xa3a1a0
 
 - !!map
+  id:                 41
   name:               Bobak
   radius:             513600
   mass:               2.7673442900088038e+22
@@ -772,4 +799,5 @@
     ascNodeLongitude: 324
   meanAnomaly0:       0.5585053606381855
   epoch:              0
+  orbiting:           36
   color:              0x8e8c8b
