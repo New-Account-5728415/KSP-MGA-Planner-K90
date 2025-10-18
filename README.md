@@ -5,16 +5,24 @@ See the [**forum post**](https://forum.kerbalspaceprogram.com/index.php?/topic/2
 
 ![Example trajectory](imgs/example_trajectory_2.png)
 
-## Dependencies
+## Installation
 
-This project was developed on [Visual Studio Code](https://code.visualstudio.com/).  
-It requires type definitions for [THREE.js](https://github.com/mrdoob/three.js/), [Chart.js](https://github.com/chartjs)
-and [js-yaml](https://github.com/nodeca/js-yaml). They can be obtained with the following commands:
+This section details installation building steps to modify and run the
+tool locally. If you are only interested in adding
+new solar systems, check the [solar system support section](#solar-systems-support).
+
+
+This project requires [Node.js](https://nodejs.org/) with the TypeScript compiler. Install it globally with:
 
 ```cmd
-npm install --save-dev @types/three
-npm install --save-dev @types/js-yaml
-npm install --save-dev @types/chart.js
+npm install -g typescript
+```
+
+Install the necessary type definitions for [THREE.js](https://github.com/mrdoob/three.js/), [Chart.js](https://github.com/chartjs)
+and [js-yaml](https://github.com/nodeca/js-yaml) with:
+
+```cmd
+npm ci
 ```
 
 This project also includes [THREE.js example classes](https://github.com/mrdoob/three.js/tree/dev/examples/js) for line rendering and camera control.
@@ -31,6 +39,12 @@ export * from '../examples/jsm/lines/LineMaterial';
 export * from '../examples/jsm/controls/OrbitControls';
 ```
 
+Compile the project with:
+
+```cmd
+tsc -p ./src/tsconfig.json
+```
+
 ## Solar systems support
 
 The tool can support any solar system configuration. You can contribute to add support for solar systems from known mods.
@@ -41,12 +55,12 @@ and `bodies.yml` file following the templates in `data/stock`.
     - `config.yml` stores the global configurations of the tool. These parameters may need
     to be changed depending on the characteristics of the solar system (e.g. duration of a day,
     camera clip distances for large solar systems...).
-    - `bodies.yml` stores the description of each bodies in the solar system. It must
+    - `bodies.yml` stores the description of each body in the solar system. It must
     rigorously follow the template format. If your solar
     system uses Kopernicus configuration files, you can directly convert them into
     a `bodies.yml` file via [this page](https://krafpy.github.io/KSP-MGA-Planner/tools/cfg-to-yml/).
 3. Add an entry to `data/systems.yml` for your solar system.
-4. **Test the tool** locally with your system (run the tool on a local HTTP server),
+4. **Test the tool** locally with your system (run the tool on a local HTTP server, e.g. with [VSCode's Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)),
 check for the coherence of results and ingame feasibility.
 5. Create a pull request to this repository.
 
