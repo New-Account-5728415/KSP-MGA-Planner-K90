@@ -23,19 +23,25 @@ export class FlybySequence {
             const initials = initialsList[i];
             if (initials.length < 2)
                 throw new Error("Body sequence initials must contain at least 2 characters.");
-            const bodiesWithInitials = [];
+            let candidateBodies = [];
             for (const body of system.orbiting) {
-                if (body.name.toLowerCase().startsWith(initials.toLowerCase())) {
-                    bodiesWithInitials.push(body);
+                const bodyNameLowercase = body.name.toLowerCase();
+                const initialsLowercase = initials.toLowerCase();
+                if (bodyNameLowercase == initialsLowercase) {
+                    candidateBodies = [body];
+                    break;
+                }
+                if (bodyNameLowercase.startsWith(initialsLowercase)) {
+                    candidateBodies.push(body);
                 }
             }
-            if (bodiesWithInitials.length >= 2) {
-                const bodyNames = bodiesWithInitials.map(body => body.name);
+            if (candidateBodies.length >= 2) {
+                const bodyNames = candidateBodies.map(body => body.name);
                 throw new Error(`Ambiguous initials \"${initials}\": ${joinStrings(bodyNames, ", ")}.`);
             }
-            if (bodiesWithInitials.length == 0)
+            if (candidateBodies.length == 0)
                 throw new Error(`Invalid custom sequence body initials \"${initials}\".`);
-            const body = bodiesWithInitials[0];
+            const body = candidateBodies[0];
             if (i == 0) {
                 attractorId = body.attractor.id;
             }
