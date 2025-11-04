@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/chart.js": "^2.9.37",
+    "@types/js-yaml": "^4.0.5",
+    "@types/three": "^0.144.0"
+  }
+}
