@@ -51,16 +51,35 @@
 
 - !!map
   id:                 1
+  name:               Antiopho
+  radius:             150000
+  atmosphereAlt:      23000
+  mass:               5.95092244923645E+20
+  stdGravParam:       39716932500
+  soi:                1635000
+  orbit:
+    semiMajorAxis:    1590632000
+    eccentricity:     0.001
+    inclination:      0.36
+    argOfPeriapsis:   14
+    ascNodeLongitude: 274
+  meanAnomaly0:       2.09439
+  epoch:              0
+  orbiting:           0
+  color:              0xb42323
+
+- !!map
+  id:                 2
   name:               Cind
   radius:             571000
   atmosphereAlt:      100000
-  mass:               5.46622e+21
-  stdGravParam:       3.648199e+12
-  soi:                15830000
+  mass:               5.46622027124885E+22
+  stdGravParam:       3648199138793.65
+  soi:                9972000
   orbit:
-    semiMajorAxis:    2524970500
+    semiMajorAxis:    1590632000
     eccentricity:     0.001
-    inclination:      0.39
+    inclination:      0.36
     argOfPeriapsis:   14
     ascNodeLongitude: 274
   meanAnomaly0:       3.14159
@@ -69,12 +88,48 @@
   color:              0x991f1f
 
 - !!map
-  id:                 2
+  id:                 3
+  name:               Sohata
+  radius:             11000
+  mass:               3.55585983386474E+17
+  stdGravParam:       23732093
+  soi:                55000
+  orbit:
+    semiMajorAxis:    6532148
+    eccentricity:     0.24
+    inclination:      187
+    argOfPeriapsis:   0
+    ascNodeLongitude: 60
+  meanAnomaly0:       2.047
+  epoch:              0
+  orbiting:           2
+  color:              0x97a055
+
+- !!map
+  id:                 4
+  name:               Rage
+  radius:             175000
+  mass:               9.44984444485232E+20
+  stdGravParam:       63069017812.5
+  soi:                3123000
+  orbit:
+    semiMajorAxis:    2524970500
+    eccentricity:     0.001
+    inclination:      0.39
+    argOfPeriapsis:   5
+    ascNodeLongitude: 22
+  meanAnomaly0:       2.3
+  epoch:              0
+  orbiting:           0
+  color:              0xc83232
+
+- !!map
+  id:                 5
   name:               Xubol
   radius:             200000
   atmosphereAlt:      98000
-  mass:               1.1754521073370991e+21
-  stdGravParam:       78453200000
+  mass:               1.18E+21
+  stdGravParam:       78754144000
   soi:                3961000
   orbit:
     semiMajorAxis:    2929967000
@@ -88,12 +143,30 @@
   color:              0xae944b
 
 - !!map
-  id:                 3
+  id:                 6
+  name:               Honeybaked
+  radius:             60000
+  mass:               3.17382530625944E+19
+  stdGravParam:       2118236400
+  soi:                428000
+  orbit:
+    semiMajorAxis:    1815864
+    eccentricity:     0.085
+    inclination:      2.8
+    argOfPeriapsis:   0
+    ascNodeLongitude: 60
+  meanAnomaly0:       2.047
+  epoch:              125000
+  orbiting:           5
+  color:              0xffc938
+
+- !!map
+  id:                 7
   name:               Blas
   radius:             811000
   atmosphereAlt:      80000
-  mass:               1.3152696097521313e+23
-  stdGravParam:       8778503956368.649
+  mass:               1.31531296543773E+23
+  stdGravParam:       8778503956368.65
   soi:                36687000
   orbit:
     semiMajorAxis:    4118716000
@@ -104,15 +177,15 @@
   meanAnomaly0:       3.14159
   epoch:              0
   orbiting:           0
-  color:              0xcccc66
+  color:              0x9d4c30
 
 - !!map
-  id:                 4
+  id:                 8
   name:               Geet
   radius:             10630
-  mass:               639208012845129900
+  mass:               6.39229083279231E+17
   stdGravParam:       42662660.4013225
-  soi:                21979.957441719882
+  soi:                22000
   orbit:
     semiMajorAxis:    2933431
     eccentricity:     0.0027
@@ -121,11 +194,29 @@
     ascNodeLongitude: 149
   meanAnomaly0:       0.431
   epoch:              0
-  orbiting:           3
-  color:              0xa27d6e
+  orbiting:           7
+  color:              0x68593e
 
 - !!map
-  id:                 5
+  id:                 9
+  name:               Rotisserie
+  radius:             95000
+  mass:               1.19349055787464E+20
+  stdGravParam:       7965451462.5
+  soi:                778000
+  orbit:
+    semiMajorAxis:    2933431
+    eccentricity:     0.0027
+    inclination:      0.132
+    argOfPeriapsis:   37
+    ascNodeLongitude: 149
+  meanAnomaly0:       0.431
+  epoch:              0
+  orbiting:           7
+  color:              0xccb4ab
+
+- !!map
+  id:                 10
   name:               Moho
   radius:             250000
   mass:               2.5263314e+21
@@ -143,10 +234,28 @@
   color:              0xa88161
 
 - !!map
-  id:                 6
+  id:                 11
+  name:               Doroho
+  radius:             23000
+  mass:               3.10917330928008E+18
+  stdGravParam:       207508714
+  soi:                431000
+  orbit:
+    semiMajorAxis:    6538054000
+    eccentricity:     0.001
+    inclination:      0.31
+    argOfPeriapsis:   15
+    ascNodeLongitude: 70
+  meanAnomaly0:       3.14
+  epoch:              0
+  orbiting:           10
+  color:              0x5f42f4
+
+- !!map
+  id:                 12
   name:               Eve
   radius:             700000
-  atmosphereAlt:      60000
+  atmosphereAlt:      90000
   mass:               1.2243980e+23
   stdGravParam:       8.1717302e+12
   soi:                89834000
