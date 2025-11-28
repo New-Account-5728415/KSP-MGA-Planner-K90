@@ -77,9 +77,9 @@
   stdGravParam:       394_845_494_722_672
   soi:                51_592_036.9145073
   orbit:
-    semiMajorAxis:    68_773_560_320
+    semiMajorAxis:    1_263_665_607
     eccentricity:     0.0073
-    inclination:      10.0143
+    inclination:      0.0143
     argOfPeriapsis:   21
     ascNodeLongitude:	87
   meanAnomaly0:       3.14159
