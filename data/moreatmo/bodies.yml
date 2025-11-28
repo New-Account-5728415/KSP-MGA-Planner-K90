@@ -310,7 +310,7 @@
   
 - !!map
   id:                 15
-  name:               DresKillerBase
+  name:               DKB
   radius:             330_000
   atmosphereAlt:      50_000
   mass:               1.60013692523913E+22
